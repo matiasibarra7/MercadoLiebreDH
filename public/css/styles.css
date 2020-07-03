@@ -23,3 +23,8 @@ p {
 .footer-icon {
   color: #1259c3;
 }
+
+.product,
+.footer {
+  background-color: white;
+}
