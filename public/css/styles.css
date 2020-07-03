@@ -1,0 +1,25 @@
+body {
+  background-color: #ebebeb;
+}
+
+.header {
+  background-color: #eac926;
+}
+
+a,
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+.recomendation {
+  background-color: #ebebeb;
+}
+
+.discount,
+.fa-truck {
+  color: #39b54a;
+}
+
+.footer-icon {
+  color: #1259c3;
+}
