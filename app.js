@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const fs = require("fs")
+const user = require(`${__dirname}/public/js/user.js`)
 
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: false }));
@@ -14,7 +14,9 @@ app.get("/", (req, res) => {
 });
 
 app.post("/", (req, res) => {
-  res.sendFile(`${__dirname}/index.html`);
+  user.writeUser(req.body)
+  //res.send(user.readUsers())  // --> te muestra como quedó el archivo con los users
+  res.sendFile(`${__dirname}/index.html`);           // --> te devuelve a la home
 });
 
 app.get("/register", (req, res) => {

@@ -1,0 +1,17 @@
+[
+ {
+  "name": "Matias Nahuel Ibarra",
+  "username": "matiasibarra7",
+  "email": "matiasibarra7@gmail.com",
+  "birthday": "2020-07-21",
+  "address": "Ecuador 4406",
+  "user-profile": "buyer",
+  "interest": [
+   "home",
+   "healthy-life"
+  ],
+  "photo-profile": "",
+  "pass": "asdas",
+  "passConfirm": "asdds"
+ }
+]
