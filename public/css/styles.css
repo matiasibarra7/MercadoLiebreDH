@@ -8,14 +8,22 @@ header {
   background-color: #eac926;
 }
 
-a,
-p,
-form {
+main {
+  padding: 0 14px; /* no me pidio */
+}
+
+a, p, form, div, b {
   font-family: "Roboto", sans-serif;
 }
 
-.recomendation {
+.section-tittle {
   background-color: #ebebeb;
+  margin: 20px 5%;
+  width: 90%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: grey;
 }
 
 .discount,
@@ -27,9 +35,30 @@ form {
   color: #1259c3;
 }
 
-.product,
+.product {
+  background-color: white;
+  margin: 15px 5%;
+  width: 90%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
 footer {
   background-color: white;
+  margin: 20px 5%;
+}
+
+footer article {
+  margin: 20px 0;
+}
+
+main input {
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border-style: hidden;
 }
 
 .logo-ML {
@@ -53,4 +82,53 @@ nav {
   padding: 10px;
   border-radius: 5px;
   margin: 20px 0;
+  box-sizing: border-box;
+}
+
+.bar-nav:hover {
+  cursor: pointer;
+  background-color: #0022AA;
+}
+
+.bar-nav-container {
+  text-align: center
+}
+
+.banner-ML {
+  display: block;
+  width: 100%;
+}
+
+.submit-btn {
+  color: white;
+  background-color: #0044AA;
+  text-align: center; /* no me pidio */
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px 0;
+  box-sizing: border-box;
+  width: 100%;
+  border-style: none;
+}
+
+.submit-btn:hover {
+  background-color: #0022AA;
+}
+
+.reset-btn {
+  color: white;
+  background-color: #AA0044;
+  text-align: center; /* no me pidio */
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px 0;
+  box-sizing: border-box;
+  width: 100%;
+  border-style: none;
+}
+
+.reset-btn:hover {
+  background-color: #CC1155;
 }
