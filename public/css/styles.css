@@ -1,13 +1,16 @@
 body {
   background-color: #ebebeb;
+  padding: 0px;
+  margin: 0px;
 }
 
-.header {
+header {
   background-color: #eac926;
 }
 
 a,
-p, form {
+p,
+form {
   font-family: "Roboto", sans-serif;
 }
 
@@ -25,6 +28,29 @@ p, form {
 }
 
 .product,
-.footer {
+footer {
   background-color: white;
+}
+
+.logo-ML {
+  width: 50%;
+}
+
+.searcher {
+  width: 50%;
+}
+
+nav {
+  display: none;
+}
+
+.bar-nav {
+  width: 40px;
+  height: 40px;
+  background-color: #0044aa;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px 0;
 }
