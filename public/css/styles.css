@@ -26,10 +26,6 @@ a, p, form, div, b {
   color: grey;
 }
 
-.discount,
-.fa-truck {
-  color: #39b54a;
-}
 
 .footer-icon {
   color: #1259c3;
@@ -39,7 +35,7 @@ a, p, form, div, b {
   background-color: white;
   margin: 15px 5%;
   width: 90%;
-  padding: 0 15px;
+  padding: 0 15px; 
   box-sizing: border-box;
 }
 
@@ -65,8 +61,9 @@ main input {
   width: 50%;
 }
 
-.searcher {
-  width: 50%;
+
+.section-ML-searcher {
+  display: flex;
 }
 
 nav {
@@ -98,6 +95,52 @@ nav {
   display: block;
   width: 100%;
 }
+
+.last-view-based,
+.offers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.price {
+  width: 30%;
+}
+
+.discount {
+  width: 70%;
+  color: #39b54a;
+}
+
+.product-name {
+  margin: 0;
+  color: grey;
+}
+
+.fa-truck {
+  color: #39b54a;
+}
+
+.info-product {
+  border-top-color: #ebebeb;
+  border-top-style: solid;
+  border-top-width: 1px;
+  padding: 10px 0;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.circle-fa-truck {
+  border: 1px solid #39b54a;
+  border-radius: 30px;
+  display: inline-block;
+  padding: 4px;
+  position: absolute;
+  right: 10px;
+  top: -15px;
+}
+
+
 
 .submit-btn {
   color: white;
@@ -131,4 +174,27 @@ nav {
 
 .reset-btn:hover {
   background-color: #CC1155;
+}
+
+.register-user-profile {
+  display: flex; 
+  align-items: flex-start;
+}
+
+.register-user-profile input {
+  margin: 0;
+}
+
+.interest {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.interest input {
+  width: 10%;
+}
+
+.interest label {
+  width: 90%;
+  margin: 20px 0;
 }
