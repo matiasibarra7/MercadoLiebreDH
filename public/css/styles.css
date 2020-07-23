@@ -17,6 +17,8 @@ header {
 .section-ML-searcher {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;/* 
+  max-height: 3rem; */
 }
 
 .logo-ML {
@@ -24,6 +26,7 @@ header {
 }
 
 .searcher-container {
+  max-height: 2rem;
   width: 45%;
   display: flex;
   position: relative;
@@ -32,6 +35,7 @@ header {
 .searcher-container input {
   width: 100%;
   border-style: none;
+  border-radius: 5px;
 }
 
 .searcher-container button {
@@ -41,6 +45,14 @@ header {
   top: 0px;
   height: 100%;
   border-style: none;
+  border-radius: 0 5px 5px 0;
+  background-color: white;
+}
+
+.phrase {
+  font-size: 0.8rem;
+  margin: 0.8rem 0;
+  text-align: center;
 }
 
 main {
@@ -49,8 +61,8 @@ main {
 
 .section-tittle {
   background-color: #ebebeb;
-  margin: 20px 5%;
-  width: 90%;
+  margin: 20px 0;
+  width: 100%;
   text-align: center;
   font-size: 24px;
   font-weight: bold;
@@ -63,8 +75,8 @@ main {
 
 .product {
   background-color: white;
-  margin: 15px 5%;
   width: 90%;
+  margin: 0 5% 0.5rem;
   padding: 0 15px;
   box-sizing: border-box;
 }
@@ -93,12 +105,33 @@ main {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
   background-color: white;
-  margin: 20px 5%;
 }
 
 footer article {
-  margin: 20px 0;
+  margin: 2rem 2rem 0;
+}
+
+footer i {
+  font-size: 2rem;
+  margin: 1rem 0 0.5rem;
+}
+
+footer p, b {
+  text-align: center;
+  margin: 0;
+}
+
+footer b {
+  display: block;
+}
+
+footer div {
+  color: grey;
+  margin: 2rem 0 1rem;
+  font-size: 0.9rem;
 }
 
 main input {
@@ -110,11 +143,15 @@ main input {
   border-style: hidden;
 }
 
+.register-form .birthdate{
+  font-weight: bold;
+}
+
 nav {
   display: none;
 }
 
-.bar-nav {
+.bar-nav-icon {
   width: 40px;
   height: 40px;
   background-color: #0044aa;
@@ -126,12 +163,12 @@ nav {
   box-sizing: border-box;
 }
 
-.bar-nav:hover {
+.bar-nav-icon:hover {
   cursor: pointer;
   background-color: #0022aa;
 }
 
-.bar-nav-container {
+.bar-nav-icon-container {
   text-align: center;
 }
 
@@ -144,6 +181,8 @@ nav {
 .offers {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1600px;
 }
 
 .price {
@@ -211,6 +250,7 @@ nav {
 .interest {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .interest input {
@@ -226,11 +266,116 @@ nav {
 }
 
 @media (min-width: 769px) {
-  .info-product {
+  header {
+    padding-bottom: 0;
+  }
+
+  .section-ML-searcher {
+    flex-wrap: nowrap;
+    height: 3rem;
+    align-items: center;
+  }
+
+  .logo-ML {
+    width: 15%;
+    margin: 0;
+
+  }
+
+  .searcher-container{
+    width: 60%;
+    margin: 0;
+    height: 100%;
+  }
+
+  .phrase {
+    width: 20%;
+    margin: 0;
+
+  }
+
+  .bar-nav-icon-container {
     display: none;
+  }
+
+  .bar-nav, .site-links, .user-settings {
+    display: flex;
+  }
+
+  .site-links, .user-settings {
+    width: 50%;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .site-links a, .user-settings a{
+    color: black;
+    text-decoration: none;
+    font-size: 0.85rem;
+  }
+
+  .site-links li {
+    margin: 0 0.85rem;
+  }
+
+  .user-settings {
+    justify-content: flex-end;
+  }
+
+  .user-settings li {
+    margin: 0 0.85rem;
+  }
+
+  .section-tittle {
+    text-align: left;
+    padding-left: 2.5%;
+  }
+
+  .product {
+    background-color: white;
+    width: 20%;
+    margin: 2.5%;
+    padding: 0.25rem;
+  }
+
+  .product .price {
+    width: calc(50% - 0.5rem);
+    margin-left: 0.5rem;
+  }
+
+  .product .discount {
+    width: 50%;
   }
 
   .info-product:hover {
     display: flex;
+  }
+
+  /* .product-name {display: none;} */
+
+  footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  footer article {
+    margin: 2rem 1rem 0;
+    width: calc(33.3333% - 3rem);
+  }
+
+  footer div {
+    margin-left: 2rem;
+  }
+
+  .login-main {
+    width: 35%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .regiter-main {
+    width: 35%;
+    padding: 0;
+    margin: 0 auto;
   }
 }
